@@ -108,7 +108,7 @@ public class Midterm {
         System.out.println(longNumberAddition("99", "1"));
         System.out.println(longNumberAddition("143", "60"));
         System.out.println(longNumberAddition("99", "600"));
-        System.out.println(longNumberAddition("1000", "111"));
+        System.out.println(longNumberAddition("99999", "111"));
         System.out.println("----------------------------------");
 
         // Test Recursion
@@ -241,7 +241,7 @@ public class Midterm {
             result = calculated + result;
         }
 
-        if (!stack1.empty()) {
+        while (!stack1.empty()) {
             int calculated = stack1.pop() + carry;
             if (carry == 1) {
                 carry = 0;
@@ -254,7 +254,7 @@ public class Midterm {
             result = calculated + result;
         }
 
-        if (!stack2.empty()) {
+        while (!stack2.empty()) {
             int calculated = stack2.pop() + carry;
             if (carry == 1) {
                 carry = 0;
